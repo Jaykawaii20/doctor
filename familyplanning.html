@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Planning (FP) FORM 1</title>
+    <link rel="stylesheet" href="stylesheet.css"> <!-- Link to your external stylesheet -->
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+/* Labels and Inputs */
+label {
+    font-weight: bold;
+    color: #34495e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="checkbox"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Submit Button */
+.submit-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <h1>Family Planning (FP) FORM 1</h1>
+
+        <form>
+
+            <!-- First Table -->
+            <table>
+                <tr>
+                    <td colspan="3"><strong>Title:</strong> Family Planning Client Assessment Record</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p><strong>Instructions for Physicians, Nurses, and Midwives:</strong> Make sure that the client is not pregnant by using the questions listed on the side. Completely fill out or check the required information. Refer accordingly for any abnormal history/finding for further medical review.</p>
+                    </td>
+                </tr>
+
+                <!-- Client ID, Philhealth No, NHTS, 4Ps -->
+                <tr>
+                    <td><label>Client ID: <input type="text" name="client_id"></label></td>
+                    <td><label>Philhealth NO: <input type="text" name="philhealth_no"></label></td>
+                    <td>
+                        <label>NHTS:</label>
+                        <input type="checkbox" name="nhts_yes" value="yes"> Yes
+                        <input type="checkbox" name="nhts_no" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Pantawid Pamilya Pilipino Program (4Ps):</label>
+                        <input type="checkbox" name="4ps_yes" value="yes"> Yes
+                        <input type="checkbox" name="4ps_no" value="no"> No
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Second Table -->
+            <table>
+                <!-- 1st Row: Client Information -->
+                <tr>
+                    <td>Name of Client: <input type="text" name="client_last_name" placeholder="Last Name"> <input type="text" name="client_given_name" placeholder="Given Name"> <input type="text" name="client_mi" placeholder="M.I."></td>
+                    <td>Date of Birth: <input type="date" name="client_dob"></td>
+                    <td>Age: <input type="number" name="client_age" placeholder="Age"></td>
+                    <td>Educ. Attainment: <input type="text" name="client_education" placeholder="Education"></td>
+                    <td>Occupation: <input type="text" name="client_occupation" placeholder="Occupation"></td>
+                </tr>
+
+                <!-- 2nd Row: Address -->
+                <tr>
+                    <td colspan="3">Address: <input type="text" name="client_street" placeholder="Street"> <input type="text" name="client_barangay" placeholder="Barangay"></td>
+                    <td>Municipality/City: <input type="text" name="client_municipality" placeholder="Municipality/City"></td>
+                    <td>Province: <input type="text" name="client_province" placeholder="Province"></td>
+                </tr>
+                <tr>
+                    <td>Contact Number: <input type="text" name="client_contact_number" placeholder="Contact Number"></td>
+                    <td>Civil Status: <input type="text" name="client_civil_status" placeholder="Civil Status"></td>
+                    <td>Religion: <input type="text" name="client_religion" placeholder="Religion"></td>
+                </tr>
+
+                <!-- 3rd Row: Spouse Information -->
+                <tr>
+                    <td>Name of Spouse:</td>
+                    <td><input type="text" name="spouse_last_name" placeholder="Last Name"></td>
+                    <td><input type="text" name="spouse_given_name" placeholder="Given Name"></td>
+                    <td><input type="text" name="spouse_mi" placeholder="M.I."></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth (Spouse): <input type="date" name="spouse_dob"></td>
+                    <td>Age: <input type="number" name="spouse_age" placeholder="Age"></td>
+                    <td>Occupation: <input type="text" name="spouse_occupation" placeholder="Occupation"></td>
+                </tr>
+
+                <!-- 4th Row: No. of Living Children, Plan to Have More, Income -->
+                <tr>
+                    <td><strong>No. of Living Children:</strong> <input type="number" name="living_children" placeholder="Number"></td>
+                    <td><strong>Plan to Have More Children?</strong></td>
+                    <td>
+                        <input type="checkbox" name="plan_more_yes" value="yes"> Yes
+                        <input type="checkbox" name="plan_more_no" value="no"> No
+                    </td>
+                    <td><strong>Average Monthly Income:</strong> <input type="text" name="monthly_income" placeholder="Income"></td>
+                </tr>
+            </table>
+
+            <!-- Third Table -->
+            <table>
+                <!-- 1st Row: Type of Client and Reasons for FP -->
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="new_acceptor"> New Acceptor</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="reason_fp"> Reason for FP:</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="spacing"> Spacing</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="limiting"> Limiting</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="others_fp"> Others: <input type="text" name="fp_others"></label>
+                    </td>
+                </tr>
+
+                <!-- 2nd Row: Method Currently Used -->
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="current_user"> Current User</label>
+                    </td>
+                    <td></td>
+                    <td align="right">
+                        <label><input type="checkbox" name="coc_uid"> COC/UID</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="bom_cmm"> BOM/CMM</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="lam"> LAM</label>
+                    </td>
+                </tr>
+
+                <!-- 3rd Row: Changing Method and Reason -->
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="changing_method"> Changing Method</label>
+                    </td>
+                    <td>
+                        <label>Reason:</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="medical_condition"> Medical Condition</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="side_effect"> Side Effect</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="pop"> POP</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="interval"> Interval</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="bbt"> BBT</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="others_method"> Others: <input type="text" name="method_others"></label>
+                    </td>
+                </tr>
+
+                <!-- 4th Row: Changing Clinic -->
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="changing_clinic"> Changing Clinic</label>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td align="right">
+                        <label><input type="checkbox" name="injectable"> Injectable</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="postpartum"> Post-partum</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="stm"> STM</label> Specify: <input type="text" name="stm_specify">
+                    </td>
+                </tr>
+
+                <!-- 5th Row: Dropout/Restart -->
+                <tr>
+                    <td>
+                        <label><input type="checkbox" name="dropout_restart"> Dropout/Restart</label>
+                    </td>
+                    <td></td>
+                    <td align="right">
+                        <label><input type="checkbox" name="implant"> Implant</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="condom"> Condom</label>
+                    </td>
+                    <td align="right">
+                        <label><input type="checkbox" name="sdm"> SDM</label>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Submit Button -->
+            <div class="submit-row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
