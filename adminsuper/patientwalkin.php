@@ -126,11 +126,11 @@
                         <a href="patientwalkin.php" class="non-style-link-menu  non-style-link-menu-active"><div><p class="menu-text">Patients Walk in</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
+                <!-- <tr class="menu-row" >
                     <td class="menu-btn menu-icon-patient">
                         <a href="doctorseason.php" class="non-style-link-menu"><div><p class="menu-text">Doctor Seasion</p></a></div>
                     </td>
-                </tr>
+                </tr> -->
 
             </table>
         </div>

@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../css/animations.css">  
     <link rel="stylesheet" href="../css/main.css">  
     <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.2/main.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
         
     <title>Dashboard</title>
     <style>
@@ -78,16 +82,26 @@
                         <a href="doctors.php" class="non-style-link-menu "><div><p class="menu-text">Staff</p></a></div>
                     </td>
                 </tr>
+                <!-- <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="services.php" class="non-style-link-menu "><div><p class="menu-text">Services</p></a></div>
+                    </td>
+                </tr> -->
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="doctors.php" class="non-style-link-menu "><div><p class="menu-text">Appointments</p></a></div>
+                    </td>
+                </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-patient">
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Patients</p></a></div>
                     </td>
                 </tr>
-                <tr class="menu-row" >
+                <!-- <tr class="menu-row" >
                     <td class="menu-btn menu-icon-patient">
                         <a href="doctorseason.php" class="non-style-link-menu"><div><p class="menu-text">Doctor Seasion</p></a></div>
                     </td>
-                </tr>
+                </tr> -->
                 </tr>
             </table>
         </div>

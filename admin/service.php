@@ -90,11 +90,37 @@
                         <a href="service.php" class="non-style-link-menu "><div><p class="menu-text">Services</p></a></div>
                     </td>
                 </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="family.php" class="non-style-link-menu "><div><p class="menu-text">Family Planning</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="animal-bite.php" class="non-style-link-menu "><div><p class="menu-text">Animal Bite</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="consultation.php" class="non-style-link-menu "><div><p class="menu-text">Consulation</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row">
+                    <td class="menu-btn menu-icon-doctor ">
+                        <a href="prinatal.php" class="non-style-link-menu "><div><p class="menu-text">Prinatal</p></a></div>
+                    </td>
+                </tr>
+                <tr class="menu-row" >
+                    <td class="menu-btn menu-icon-doctor">
+                        <a href="immune.php" class="non-style-link-menu"><div><p class="menu-text">Immune</p></a></div>
+                    </td>
+                </tr>
                 <tr class="menu-row" >
                     <td class="menu-btn menu-icon-patient">
                         <a href="patient.php" class="non-style-link-menu"><div><p class="menu-text">Patients</p></a></div>
                     </td>
                 </tr>
+                
                 <tr class="menu-row" >
                 <td class="menu-btn menu-icon-history">
                 <i class="fas fa-history" aria-hidden="true" style="margin-left: 82px; margin-top: 5px;"></i>
@@ -167,7 +193,7 @@
         
         
                         </tr>
-                <tr>
+                <!-- <tr>
                     <td colspan="4">
                         
                         <center>
@@ -195,7 +221,7 @@
                         </table>
                     </center>
                     </td>
-                </tr>
+                </tr> -->
 
 
 
@@ -208,11 +234,9 @@
                             <tr>
                             <td style="text-align: center;">
                              <p style="padding: 10px 0; font-size: 23px; font-weight: 700; color: var(--primarycolor);">
-                              Upcoming Appointments
+                              We have available services
                              </p>
                              <p style="padding-bottom: 19px; font-size: 15px; font-weight: 500; color: #212529e3; line-height: 20px;">
-                              Here's quick access to Upcoming Appointments<br>
-                               More details available in @Appointment section.
                             </p>
                             </td>
 
@@ -224,10 +248,11 @@
             <table width="85%" class="sub-table scrolldown" border="1" cellspacing="5" cellpadding="5">
                 <thead>
                     <tr>    
-                        <th class="table-headin">Patient Name</th>
-                        <th class="table-headin">Appointment Number</th>
-                        <th class="table-headin">Session</th>
-                        <th class="table-headin">Appointment Date</th>
+                        <th class="table-headin">Family Planning</th>
+                        <th class="table-headin">Animal Bite</th>
+                        <th class="table-headin">Consultation</th>
+                        <th class="table-headin">Prinatal</th>
+                        <th class="table-headin">Immunization</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -280,7 +305,7 @@
                             </tr>
                             <tr>
                             <td>                                
-                            <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width: 50%; margin-left: 280px;">Show all Appointments</button></a>
+                            <a href="family.php" class="non-style-link"><button class="btn-primary btn" style="width: 50%; margin-left: 280px;">Let's check our first Service</button></a>
 
                                       </td>
                             </tr>
